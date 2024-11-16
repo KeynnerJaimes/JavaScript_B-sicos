@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let saldo = 10000; 
+        let montoRetiro = 0;
+
+        while (true) {
+            montoRetiro = parseFloat(prompt("Ingrese el monto que desea retirar (Saldo disponible: $" + saldo + "): "));
+        
+
+            if (isNaN(montoRetiro) || montoRetiro <= 0) {
+                console.log("Por favor, ingrese un monto válido.");
+            } else if (montoRetiro > saldo) {
+                console.log("Error: El monto supera el saldo disponible.");
+            } else {
+
+                saldo -= montoRetiro;
+                console.log("Retiro exitoso. Saldo restante: $" + saldo);
+                break;
+            }
+        }
+    </script>
+
+</body>
+</html>

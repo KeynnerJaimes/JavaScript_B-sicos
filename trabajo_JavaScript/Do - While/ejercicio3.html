@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let continuar;
+        
+        do {
+            console.log("Menú de comidas rápidas:");
+            console.log("1. Hamburguesa - $10");
+            console.log("2. Papas fritas - $5");
+            console.log("3. Refresco - $3");
+            console.log("4. Helado - $4");
+        
+            let opcion = parseInt(prompt("Elige una opción del menú (1-4):"));
+        
+            if (opcion === 1) {
+                total += 10;
+            } else if (opcion === 2) {
+                total += 5;
+            } else if (opcion === 3) {
+                total += 3;
+            } else if (opcion === 4) {
+                total += 4;
+            } else {
+                console.log("Opción no válida. Intenta de nuevo.");
+            }
+        
+
+            continuar = prompt("¿Deseas pedir algo más? (si/no):").toLowerCase();
+        } while (continuar === "si");
+        
+
+        console.log(`Costo total de tus pedidos: $${total}`);
+        console.log("¡Gracias por tu compra!");
+        
+    </script>
+</body>
+</html>

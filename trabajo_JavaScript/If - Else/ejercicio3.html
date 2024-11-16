@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let montoCompra = +prompt("Ingrese el monto total de la compra: ");
+        let descuento = 0;
+
+
+        if (montoCompra >= 1000) {
+            descuento = 0.10;
+        } else if (montoCompra >= 500) {
+            descuento = 0.05;
+        }
+        
+        let montoConDescuento = montoCompra - (montoCompra * descuento);
+        
+        console.log("El monto total con el descuento aplicado es: $" + montoConDescuento);
+    </script>
+</body>
+</html>

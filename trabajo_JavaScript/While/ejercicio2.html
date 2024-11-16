@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalCompra = 0;
+        let agregarProducto = "si";
+
+        while (agregarProducto === "si") {
+            let precioProducto = parseFloat(prompt("Ingrese el precio del producto: "));
+            let cantidadProducto = parseInt(prompt("Ingrese la cantidad que desea comprar: "));
+
+
+            let costoTotalProducto = precioProducto * cantidadProducto;
+
+
+            totalCompra += costoTotalProducto;
+
+
+            console.log("Costo del producto: $" + costoTotalProducto);
+
+
+            agregarProducto = prompt("¿Desea agregar otro producto? (sí/no): ");
+        }
+
+
+        console.log("Costo total de la compra: $" + totalCompra);
+
+    </script>
+</body>
+</html>

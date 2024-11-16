@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let cantidadVehiculos = prompt("Ingrese el número de vehículos que ingresarán al parqueadero: ");
+        cantidadVehiculos = parseInt(cantidadVehiculos);
+
+        let placas = " "; 
+        let horasIngreso = " ";
+
+        for (let i = 1; i <= cantidadVehiculos; i++) {
+            let placa = prompt("Ingrese la placa del vehículo " + i + ": ");
+            let horaIngreso = prompt("Ingrese la hora de ingreso del vehículo " + i + ": ");
+            
+            placas += placa + "\n";
+            horasIngreso += horaIngreso + "\n";
+        }
+
+        console.log("Resumen de vehículos registrados:");
+        console.log("Placas:\n" + placas);
+        console.log("Horas de ingreso:\n" + horasIngreso);
+    </script>
+
+</body>
+</html>

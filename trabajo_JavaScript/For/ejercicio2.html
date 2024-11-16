@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let cantidadProductos = parseInt(prompt("¿Cuántos productos desea ingresar al carrito? "));
+
+        let totalCompra = 0;
+        let productos = " ";
+
+        for (let i = 0; i < cantidadProductos; i++) {
+            let nombreProducto = prompt("Ingrese el nombre del producto " + (i + 1) + ": ");
+            let precioProducto = prompt("Ingrese el precio del producto " + (i + 1) + ": ");
+            precioProducto = parseFloat(precioProducto);
+
+
+            totalCompra += precioProducto;
+            productos += nombreProducto + " - $" + precioProducto.toFixed(2) + "\n";
+        }
+
+        console.log("Productos en su carrito:\n" + productos);
+        console.log("Total de la compra: $" + totalCompra);
+    </script>
+
+</body>
+</html>

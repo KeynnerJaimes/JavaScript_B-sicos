@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingresa un número entero positivo:"));
+
+    while (numero >= 0) {
+        console.log(numero);
+        document.body.innerHTML = `<h1>${numero}</h1>`;
+        numero--;
+    }
+
+    console.log("¡Tiempo cumplido!");
+    document.body.innerHTML = `<h1>¡Tiempo cumplido!</h1>`;
+
+    </script>
+</body>
+</html>

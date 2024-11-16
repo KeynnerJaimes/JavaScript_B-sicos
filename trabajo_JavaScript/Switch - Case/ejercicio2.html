@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let peso = +prompt("Ingrese su peso en kilogramos: ");
+        let altura = +prompt("Ingrese su altura en metros: ");
+
+        let imc = peso / (altura * altura);
+        
+        console.log("Su IMC es: " + imc);
+
+        if (imc < 18.5) {
+            console.log("Categoría: Bajo peso");
+        } else if (imc < 24.9) {
+            console.log("Categoría: Peso normal");
+        } else if (imc < 29.9) {
+            console.log("Categoría: Sobrepeso");
+        } else {
+            console.log("Categoría: Obesidad");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peso = +prompt("Ingrese su peso (Kg): ");
+        let altura = +prompt("Ingrese su altura (Mts): ");
+        
+        let IMC = peso/ (altura+altura);
+
+        if (IMC < 18.5){
+            console.log("Su peso es bajo.");
+        }else if(18.5 && IMC <25){
+            console.log("Su peso es normal.");
+        }else if(25 && IMC < 30){
+            console.log("Estas en sobrepeso.");
+        }else if(IMC >=30){
+            console.log("Usted tiene sobrepeso.")
+        }else{
+            console.log("Ingrese numeros validos (positivos)")
+        }
+    </script>
+</body>
+</html>

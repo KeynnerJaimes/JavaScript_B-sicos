@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let cantidadContactos = parseInt(prompt("¿Cuántos contactos desea ingresar a la agenda? "));
+
+        let contactos = " ";
+
+        for (let i = 0; i < cantidadContactos; i++) {
+            let nombreContacto = prompt("Ingrese el nombre del contacto " + (i + 1) + ": ");
+            let telefonoContacto = prompt("Ingrese el número de teléfono de " + nombreContacto + ": ");
+            
+
+            contactos += "Nombre: " + nombreContacto + ", Teléfono: " + telefonoContacto + "\n"; 
+        }
+
+        console.log("Contactos registrados:\n" + contactos);
+    </script>
+
+</body>
+</html>
